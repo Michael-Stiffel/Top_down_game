@@ -6,10 +6,12 @@ using UnityEngine;
 public class Player_Movement : MonoBehaviour
 {
     public float movementspeed = 5f;
-
+    
+    
     public Rigidbody2D rb;
 
     private Vector2 movement;
+    
 
     public Animator animator;
     // Update is called once per frame
@@ -30,4 +32,6 @@ public class Player_Movement : MonoBehaviour
         //Move
         rb.MovePosition(rb.position+ movement * (movementspeed * Time.deltaTime));
     }
+    
+    
 }
